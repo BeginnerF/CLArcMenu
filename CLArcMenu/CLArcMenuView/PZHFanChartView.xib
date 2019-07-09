@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PZHFanChartView">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SfQ-1p-Fxj">
+                    <rect key="frame" x="20" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="X9E-sR-wUn"/>
+                        <constraint firstAttribute="width" constant="40" id="eay-3n-U5K"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="临时异地就医信息查询" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ws5-h2-fZc">
+                    <rect key="frame" x="0.0" y="40" width="80" height="30"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fla-I2-RqD">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="70"/>
+                    <connections>
+                        <action selector="Btnclick:" destination="iN0-l3-epB" eventType="touchUpInside" id="LUi-KC-Kjm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fla-I2-RqD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="6GE-Ey-EQK"/>
+                <constraint firstItem="SfQ-1p-Fxj" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="AHK-Sg-vTW"/>
+                <constraint firstItem="ws5-h2-fZc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HEl-e8-2r6"/>
+                <constraint firstItem="ws5-h2-fZc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HMl-K5-xeK"/>
+                <constraint firstItem="ws5-h2-fZc" firstAttribute="top" secondItem="SfQ-1p-Fxj" secondAttribute="bottom" id="Npd-8r-Eah"/>
+                <constraint firstAttribute="bottom" secondItem="fla-I2-RqD" secondAttribute="bottom" id="bje-ub-weP"/>
+                <constraint firstAttribute="trailing" secondItem="ws5-h2-fZc" secondAttribute="trailing" id="cJN-kP-VeW"/>
+                <constraint firstAttribute="trailing" secondItem="fla-I2-RqD" secondAttribute="trailing" id="fkc-ym-7iB"/>
+                <constraint firstItem="fla-I2-RqD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="iae-iY-u1y"/>
+                <constraint firstItem="SfQ-1p-Fxj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ppg-H0-QzG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ws5-h2-fZc" secondAttribute="bottom" id="te5-ni-kKE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="iconImageView" destination="SfQ-1p-Fxj" id="PDO-Kw-tcB"/>
+                <outlet property="selectBtn" destination="fla-I2-RqD" id="Mbv-ID-GhT"/>
+                <outlet property="titleLabel" destination="ws5-h2-fZc" id="1Pf-Ui-nB9"/>
+            </connections>
+            <point key="canvasLocation" x="-56" y="-97.151424287856074"/>
+        </view>
+    </objects>
+</document>
